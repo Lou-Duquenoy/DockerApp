@@ -1,6 +1,8 @@
 # DockerApp
 Dans ce projet, j'ai créer un environnement comportant MySQL, phpMyAdmin, PHP et Apache.
+
 Pour cela, j'ai utilisé le fichier docker.compose.yml qui va comporter :
+
 -Services : Container qui peuvent permettrent d'être associer à 1 ou plusieurs containers. Ici, il y aura 4 services chacun associer à 1 container.
 
 -Images : Les images contiennent tout ce dont j'ai besoin pour la création des container. Les images pour MySQL, PhpMyadmin PHP ayant déjà été créer j'ai donc créer un fichier Dockerfile qui a généré l'image d'Apache après avoir réalisé la commande : "docker build -t"
