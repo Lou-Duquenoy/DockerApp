@@ -1,4 +1,6 @@
-FROM php:7.3-apache
-RUN apt-get update && apt-get upgrade -y
-RUN docker-php-ext-install mysqli
-EXPOSE 80
+FROM httpd:2.4
+
+COPY helloworld.apache.conf /usr/local/apache2/conf/helloworld.apache.conf
+
+RUN echo "Include /usr/local/apache2/conf/helloworld.apache.conf" \
+    >> /usr/local/apache2/conf/httpd.conf
