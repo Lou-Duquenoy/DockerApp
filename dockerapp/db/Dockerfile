@@ -3,7 +3,7 @@ FROM mysql
 
 
 ENV MYSQL_ALLOW_EMPTY_PASSWORD true
-ENV MYSQL_DATABASE tutoseu
+ENV MYSQL_DATABASE test
 
 ADD test.sql /docker-entrypoint-initdb.d
 
